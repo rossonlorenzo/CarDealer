@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>assets/Diffnes.qss</file>
+    <file>assets/icon.png</file>
+    <file>assets/images/placeholder.svg</file>
+    <file>assets/icons/list.png</file>
+    <file>assets/icons/grid.png</file>
+    <file>assets/icons/edit.svg</file>
+    <file>assets/icons/view.png</file>
+    <file>assets/icons/delete.svg</file>
+</qresource>
+</RCC>

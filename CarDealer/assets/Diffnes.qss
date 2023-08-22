@@ -1,0 +1,680 @@
+/*Copyright (c) DevSec Studio. All rights reserved.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(38, 38, 38, 255),stop:1 rgba(143, 143, 143, 255));
+	color: #fff;
+	selection-background-color: #fff;
+	selection-color: #000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #fff;
+}
+
+
+/*-----QMenuBar-----*/
+QMenuBar 
+{
+	background-color: rgba(38, 38, 38, 255);
+	color: #fff;
+
+}
+
+
+QMenuBar::item 
+{
+	background-color: transparent;
+	border-left: 1px solid #003333;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+
+QMenuBar::item:selected 
+{
+	background-color: #003333;
+	border: 1px solid #006666;
+	color: #fff;
+
+}
+
+
+QMenuBar::item:pressed 
+{
+	background-color: #006666;
+	border: 1px solid #006666;
+	color: #fff;
+
+}
+
+/*-----QMenu-----*/
+QMenu
+{
+    background-color: rgba(38, 38, 38, 255);
+    border: 1px solid #4a5157;
+    padding: 10px;
+	color: #fff;
+
+}
+
+
+QMenu::item
+{
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+	min-width: 200px;
+
+}
+
+
+QMenu::separator
+{
+   	background-color: #242424;
+	height: 1px;
+
+}
+
+
+QMenu::item:disabled
+{
+    color: white;
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+
+}
+
+
+QMenu::item:selected
+{
+	background-color: #003333;
+	border: 1px solid #006666;
+	color: #fff;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton 
+{
+	background-color: transparent;
+	color: #fff;
+	padding: 3px;
+	margin-left: 1px;
+}
+
+
+QToolButton:hover
+{
+	background-color: rgba(70,162,218,50%);
+	border: 1px solid #46a2da;
+	color: #000;
+	
+}
+
+
+QToolButton:pressed
+{
+	background-color: #727272;
+	border: 1px solid #46a2da;
+
+}
+
+
+QToolButton:checked
+{
+	background-color: #727272;
+	border: 1px solid #222;
+}
+
+QToolButton:disabled
+{
+    color: grey;
+    background-color: transparent;
+}
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: #525185;
+	color: #fff;
+	min-width: 80px;
+	border: 1px solid #1d1d1d;
+	border-radius: 4px;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #000;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #606060;
+	color: #959595;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #54aad3;
+	border: 1px solid #46a2da;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #2385b4;
+	border: 1px solid #46a2da;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: #bd5355;
+	border: 1px solid #bd5355;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #242424;
+	color : #fff;
+	border: 1px solid #1d1d1d;
+	padding: 3px;
+	padding-left: 5px;
+	border-radius: 4px;
+
+}
+
+
+/*-----QPlainTExtEdit-----*/
+QPlainTextEdit
+{
+	background-color: #242424;
+	color : #fff;
+	border: 1px solid #1d1d1d;
+	padding: 3px;
+	padding-left: 5px;
+	border-radius: 4px;
+
+}
+
+
+/*-----QToolBox-----*/
+QToolBox
+{
+	background-color: transparent;
+	border: 1px solid #1d1d1d;
+
+}
+
+
+QToolBox::tab
+{
+	background-color: #002b2b;
+	border: 1px solid #1d1d1d;
+
+}
+
+
+QToolBox::tab:hover
+{
+	background-color: #006d6d;
+	border: 1px solid #1d1d1d;
+
+}
+
+
+/*-----QComboBox-----*/
+QComboBox
+{
+	background-color: rgba(68, 68, 68, 255);
+    padding-left: 10px;
+	padding-right: 30px;
+    color: #fff;
+    height: 20px;
+	border: 1px solid #1d1d1d;
+	border-radius: 4px;
+
+}
+
+
+QComboBox:on
+{
+    background-color: rgba(68, 68, 68, 255);
+	color: #fff;
+
+}
+
+
+QComboBox QAbstractItemView
+{
+    background-color: rgba(68, 68, 68, 255);;
+    color: #fff;
+    selection-background-color: #002b2b;
+	selection-color: #fff;
+    outline: 0;
+
+}
+
+
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+}
+
+/*-----QSpinBox-----*/
+QSpinBox 
+{
+	background-color: rgba(48, 48, 48, 255);
+}
+
+/*-----QGroupBox-----*/
+QGroupBox 
+{
+    border: 1px solid;
+    border-color: #1d1d1d;
+	border-radius: 4px;
+    margin-top: 23px;
+
+}
+
+
+QGroupBox::title  
+{
+    background-color: #002b2b;
+    color: #fff;
+	subcontrol-position: top left;
+    subcontrol-origin: margin;
+    padding: 5px;
+	min-width: 100px;
+	border: 1px solid #1d1d1d;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: none;
+
+}
+
+
+/*-----QHeaderView-----*/
+QHeaderView::section
+{
+    background-color: #4a5157;
+	border: none;
+    color: #fff;
+	padding: 4px;
+	
+}
+
+
+QHeaderView::section:disabled
+{
+    background-color: #525251;
+    color: #656565;
+
+}
+
+
+QHeaderView::section:checked
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(227, 227, 227, 255),stop:1 rgba(187, 187, 187, 255));
+    color: #000;
+
+}
+
+
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one
+{
+    border-left: 1px solid #003333;
+
+}
+
+
+QHeaderView::section::vertical
+{
+    border-left: 1px solid #003333;
+}
+
+
+QHeaderView::section::horizontal::first,
+QHeaderView::section::horizontal::only-one
+{
+    border-left: 1px solid #003333;
+
+}
+
+
+QHeaderView::section::horizontal
+{
+    border-left: 1px solid #003333;
+
+}
+
+
+QTableCornerButton::section
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(227, 227, 227, 255),stop:1 rgba(187, 187, 187, 255));
+	border: 1px solid #000;
+    color: #fff;
+
+}
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+    color: #fff;
+	border: none;
+
+}
+
+
+/*-----QScrollBar-----*/
+QScrollBar:vertical 
+{
+   border: none;
+   width: 12px;
+
+}
+
+
+QScrollBar::handle:vertical 
+{
+   border: none;
+   border-radius : 0px;
+   background-color: #7a7a7a;
+   min-height: 80px;
+   width : 12px;
+
+}
+
+
+QScrollBar::handle:vertical:pressed
+{
+   background-color: #5d5f60; 
+
+}
+
+
+QScrollBar::add-line:vertical
+{
+   border: none;
+   background: transparent;
+   height: 0px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::add-line:vertical:hover 
+{
+   background-color: transparent;
+
+}
+
+
+QScrollBar::add-line:vertical:pressed 
+{
+   background-color: #3f3f3f;
+
+}
+
+
+QScrollBar::sub-line:vertical
+{
+   border: none;
+   background: transparent;
+   height: 0px;
+
+}
+
+
+QScrollBar::sub-line:vertical:hover 
+{
+   background-color: transparent;
+
+}
+
+
+QScrollBar::sub-line:vertical:pressed 
+{
+   background-color: #3f3f3f;
+
+}
+
+
+QScrollBar::up-arrow:vertical
+{
+   width: 0px;
+   height: 0px;
+   background: transparent;
+
+}
+
+
+QScrollBar::down-arrow:vertical 
+{
+   width: 0px;
+   height: 0px;
+   background: transparent;
+
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+   background-color: #222222;
+	
+}
+
+
+QScrollBar:horizontal 
+{
+   border: none;
+   height: 12px;
+
+}
+
+
+QScrollBar::handle:horizontal 
+{
+   border: none;
+   border-radius : 0px;
+   background-color: #7a7a7a;
+   min-height: 80px;
+   height : 12px;
+
+}
+
+
+QScrollBar::handle:horizontal:pressed
+{
+   background-color: #5d5f60; 
+
+}
+
+
+QScrollBar::add-line:horizontal
+{
+   border: none;
+   background: transparent;
+   height: 0px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::add-line:horizontal:hover 
+{
+   background-color: transparent;
+
+}
+
+
+QScrollBar::add-line:horizontal:pressed 
+{
+   background-color: #3f3f3f;
+
+}
+
+
+QScrollBar::sub-line:horizontal
+{
+   border: none;
+   background: transparent;
+   height: 0px;
+
+}
+
+
+QScrollBar::sub-line:horizontal:hover 
+{
+   background-color: transparent;
+
+}
+
+
+QScrollBar::sub-line:horizontal:pressed 
+{
+   background-color: #3f3f3f;
+
+}
+
+
+QScrollBar::up-arrow:horizontal
+{
+   width: 0px;
+   height: 0px;
+   background: transparent;
+
+}
+
+
+QScrollBar::down-arrow:horizontal 
+{
+   width: 0px;
+   height: 0px;
+   background: transparent;
+
+}
+
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+   background-color: #222222;
+	
+}
+
+/*-----QStatusBar-----*/
+QStatusBar
+{
+	background-color: rgba(58, 58, 58, 255);
+	color: #ffffff;
+	border-color: #051a39;
+
+}
+
+#list-item-sedan
+{
+    background-color: rgba(58, 58, 58, 255);
+    border: 3px solid #3432a8;
+    border-right: 4px solid #325ca8;
+    border-bottom: 4px solid #325ca8;
+    border-radius: 10%;
+}
+
+#list-item-supercar
+{
+    background-color: rgba(58, 58, 58, 255);
+    border: 3px solid #b02a2a;
+    border-right: 4px solid #b34646;
+    border-bottom: 4px solid #b34646;
+    border-radius: 10%;
+}
+
+#list-item-suv
+{
+    background-color: rgba(58, 58, 58, 255);
+    border: 3px solid #2b8f35;
+    border-right: 4px solid #4ba354;
+    border-bottom: 4px solid #4ba354;
+    border-radius: 10%;
+}
+
+#full-sedan #type{
+    color: #3432a8;
+    font-weight: bold;
+}
+
+#full-suv #type{
+    color: #2b8f35;
+    font-weight: bold;
+}
+
+#full-supercar #type{
+    color: #b02a2a;
+    font-weight: bold;
+}
+
+#driving_modes,
+#acceleration,
+#aerodynamic, 
+#recovery,
+#wheels,
+#traction,
+#habitability,
+#trunk_capacity,
+#assisted_braking{
+    padding-left: 10px;
+}
+
+#id 
+{
+    font-weight: bold;
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "acceleration": 0,
+        "aerodynamics": 0,
+        "brand": "",
+        "doors": false,
+        "driving_modes": 0,
+        "horsepower": 0,
+        "id": 5,
+        "imagePath": "",
+        "kilometers": 0,
+        "list_price": 0,
+        "name": "",
+        "type": "Super_car"
+    },
+    {
+        "assisted_braking": false,
+        "brand": "",
+        "doors": false,
+        "habitability": 0,
+        "horsepower": 0,
+        "id": 1,
+        "imagePath": "",
+        "kilometers": 0,
+        "list_price": 0,
+        "name": "",
+        "trunk_capacity": 0,
+        "type": "Sedan"
+    },
+    {
+        "assisted_braking": false,
+        "brand": "",
+        "doors": false,
+        "habitability": 0,
+        "horsepower": 0,
+        "id": 4,
+        "imagePath": "",
+        "kilometers": 0,
+        "list_price": 0,
+        "name": "",
+        "trunk_capacity": 0,
+        "type": "Sedan"
+    },
+    {
+        "brand": "",
+        "doors": false,
+        "horsepower": 0,
+        "id": 10,
+        "imagePath": "",
+        "kilometers": 0,
+        "list_price": 0,
+        "name": "",
+        "recovery": 0,
+        "traction": false,
+        "type": "Suv",
+        "wheels": 0
+    }
+]
